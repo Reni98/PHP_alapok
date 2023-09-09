@@ -36,7 +36,7 @@ $felnot = false;
 //Array - Tömb amely több értéket képes tárolni.
 $nevek = ["John", "Sirius","James"];
 //Lehetséges a típus keverés
-$korok = array(19, 28, 34, '700', true, null); //arry függvényt használunk
+$korok = array(19, 28, 34, '700', true, null); //array függvényt használunk
 
 //NULL - Az érték hiányát jelzi.
 $nincsErtek1;
