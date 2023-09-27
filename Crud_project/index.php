@@ -47,7 +47,13 @@
                                 <td><?php echo $row['phone']; ?></td>
                                  <td>
                                     <a class="btn btn-success" href="edit.php?id=<?php echo $row['id'];  ?> ">Szerkesztés</a>
-                                </td>      
+                                </td>  
+                                 <td>
+                                        <form action="code.php" method="POST">
+                                        <input type="hidden" name="id" value="<?php echo $row['id'];?>">
+                                         <button type="submit" name="delete_btn">Delete</button>
+                                        </form>
+                                    </td>
                             </tr>
                                 <?php
                                     }
