@@ -57,5 +57,21 @@ if(isset($_POST['update_btn'])){
     }
 }
 
+    if(isset($_POST['delete_btn'])){
+    $user_id = $_POST['id'];
+   
+
+    $delete_query = "DELETE FROM users WHERE id='$user_id'";
+    $delete_query_run = mysqli_query($connection, $delete_query);
+
+    if($delete_query_run){
+        $_SESSION['status'] = "Data deleted succesfully";
+        header('location: index.php');
+    }
+    else{
+        $_SESSION['status'] = "Data not deleted succesfully";
+        header('location: delete.php');
+    }
+}
 ?>
 
